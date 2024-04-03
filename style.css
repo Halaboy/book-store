@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+@font-face {
+    font-family: 'poppin';
+    src: url(/Poppins/Poppins-Light.ttf);
+}
+body{
+    font-family: 'poppin';
+    width: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 10%;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    z-index: 1000;
+    
+}
+header .logo{
+    display: flex;
+    align-items: center;
+
+}
+header .logo .fa-book-open{
+    font-size: 1.5rem;
+    padding-right: 10px;
+    font-weight: 500;
+
+}
+header .logo p{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+
+header nav a{
+    font-size: 15px;
+    text-transform: capitalize;
+    padding-right: 15px;
+    font-weight: 200;
+    color:grey;
+}
+header nav a:hover{
+    color: black;
+}
+.btn{
+    height: 10px;
+    width: 30px;
+    padding: 15px 20px;
+    background-color: gray;
+    color: white;
+    font-size: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    text-transform: capitalize;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+.btn-2{
+    height: 10px;
+    width: 30px;
+    padding: 15px 20px;
+    background-color: transparent;
+    color: goldenrod;
+    font-size: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid goldenrod;
+    text-transform: capitalize;
+}
+.btn-2:hover{
+    background-color: goldenrod;
+    color: white;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    padding: 0 13%;
+    padding-top: 3%;
+}
+section .details{
+    position: relative;
+    width: 550px;
+    top: 240px;
+}
+.details h2{
+    font-size: 70px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.details span{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 100;
+    color: gray;
+    position: absolute;
+    top: 90px;
+    padding-left: 5px;
+    
+}
+.details p{
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-bottom: 30px;
+    color: grey;
+    font-weight: lighter;
+}
+.details .explore{
+    display: block;
+    color: red;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-size: 13px;
+    padding-top: 25px;
+}
+.details .explore:hover{
+    color: #f64646;
+}
+section .image-book{
+    position: absolute;
+    top: -9rem;
+    left: 36rem;
+}
+.image-book img{
+    width: 40rem;
+}
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 2% 10%;
+    background-color: bisque;
+}
+.pricing .head{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.head h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: black;
+    font-weight: bolder;
+}
+.head p{
+    font-size: 1.3rem;
+    color: grey;
+    font-weight: lighter;
+}
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-body .card{
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 7px;
+}
+
+.card h2{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.card p{
+    font-size: 19px;
+    word-spacing: 4px;
+    font-weight: 100;
+    color: gray;
+}
+.card h3{
+    color: goldenrod;
+    font-size: 4rem;
+    padding: 10px 0;
+}
+.card .card-details{
+    font-size: 15px;
+    text-align:justify;
+    color:grey;
+    margin-bottom: 40px;
+}
+.card-body .card-big{
+    width: 420px;
+    height: 530px;
+    border: 2px solid goldenrod;
+    padding-top: 50px;
+    position: relative;
+}
+
+.card-big .card h2{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.card-big .card .card-details{
+    font-size: 25px;
+    word-spacing: 7px;
+    font-weight: 200;
+    color: gray;
+    padding-bottom: 40px;
+}
+.card-big h2{
+    padding-top: 40px;
+}
+.card-big .card h3{
+    color: goldenrod;
+    font-size: 5rem;
+    padding: 20px 0;
+}
+.card-big .popular{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 416px;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    background-color: whitesmoke;
+    padding: 10px 15px;
+    text-align: center;
+    align-items: center;
+    color: goldenrod;
+    font-weight: 700;
+    border-bottom: 1px solid grey;
+}
+.inside-book{
+    background-color: white;
+}
+.inside-book .head{
+    padding-top: 35px;
+}
+.inside-book-content{
+    display: flex;
+}
+.inside-book .inside-book-slide{
+    margin: 7% 10%;
+}
+.inside-book-slide p{
+    text-align: justify;
+    padding-bottom: 50px;
+
+}
+.review{
+    background-color: whitesmoke;
+}
+.review .head{
+    padding-top: 40px;
+}
+.review-cards div{
+    display: flex;
+    align-items: center;
+}
+.review-cards div h3{
+    padding-left: 15px;
+    text-transform: capitalize;
+}
+.review-cards div img{
+    width: 90px;
+}
+.review-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.review-content .review-cards{
+    background-color: white;
+    padding: 15px;
+}
+.form{
+    background-color: antiquewhite;
+    padding: 5% 25%;
+    align-items: center;
+}
+.form-body{
+    margin-bottom: 10px;
+}
+.form-body-content{
+    display: flex;
+}
+.form-body label{
+    font-size: 15px;
+    font-weight: 700;
+}
+.form-body-content{
+    margin-top: 10px;
+}
+.form-body-content .form-icon{
+    background-color: #cec3c3;
+    padding: 10px 15px;
+}
+.form-body-content .right{
+    border-radius: 5px 0 0 5px;
+}
+.form-body-content .left{
+    border-radius: 0 5px 5px 0;
+}
+.form-body-content input{
+    width: 80%;
+    height: 45px;
+    border: 1px solid #cec3c3;
+    padding: 10px;
+    outline: none;
+}
+.form-body-content .textarea{
+    width: 90%;
+    height: 150px;
+    border-radius: 8px;
+    vertical-align: top;
+}
+.form button{
+    width: 10%;
+    height: 50px;
+    background-color: grey;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+.form button:hover{
+    background-color: black;
+}
