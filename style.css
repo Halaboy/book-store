@@ -11,7 +11,7 @@
 }
 body{
     font-family: 'poppin';
-    width: 100%;
+    width: 100vw;
 }
 header{
     display: flex;
@@ -56,6 +56,9 @@ header nav a{
 header nav a:hover{
     color: black;
 }
+.side-bar{
+    display: none;
+}
 .btn{
     height: 10px;
     width: 30px;
@@ -88,9 +91,20 @@ header nav a:hover{
     background-color: goldenrod;
     color: white;
 }
+
+.fa-bars{
+    font-size: 1.9rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+
+
 section{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     padding: 0 13%;
     padding-top: 3%;
 }
@@ -98,6 +112,7 @@ section .details{
     position: relative;
     width: 550px;
     top: 240px;
+
 }
 .details h2{
     font-size: 70px;
@@ -140,8 +155,13 @@ section .image-book{
 .image-book img{
     width: 40rem;
 }
+
+
+
+
+
 .pricing{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     padding: 2% 10%;
     background-color: bisque;
@@ -229,7 +249,7 @@ section .image-book{
     position: absolute;
     left: 0;
     top: 0;
-    width: 416px;
+    width: 100%;
     border: none;
     border-radius: 5px 5px 0 0;
     background-color: whitesmoke;
@@ -240,6 +260,8 @@ section .image-book{
     font-weight: 700;
     border-bottom: 1px solid grey;
 }
+
+
 .inside-book{
     background-color: white;
 }
@@ -325,7 +347,7 @@ section .image-book{
     vertical-align: top;
 }
 .form button{
-    width: 10%;
+    width: 150px;
     height: 50px;
     background-color: grey;
     border: none;
@@ -338,4 +360,361 @@ section .image-book{
 }
 .form button:hover{
     background-color: black;
+}
+
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    text-align: center;
+}
+footer .head h2{
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+}
+footer p:nth-last-child(2){
+    color: whitesmoke;
+    text-align: justify;
+    padding: 10px 150px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1456px) {
+    header{
+        padding: 0 30px;
+        height: 80px;
+        width: 100%;
+        
+    }
+    header .logo .fa-book-open{
+        font-size: 1rem;
+        padding-right: 5px;
+        font-weight: 300;
+    
+    }
+    header .logo p{
+        font-size: 1.1rem;
+        text-transform: capitalize;
+        font-weight: 400;
+    }
+    header nav a{
+        font-size: 15px;
+        padding-right: 13px;
+    }
+    .btn{
+        height: 8px;
+        width: 25px;
+        padding: 10px 15px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+    section{
+        height: 100vh;
+        width: 100%;
+        padding: 0 8%;
+        padding-top: 1%;
+    }
+    section .details{
+        position: relative;
+        width: 450px;
+        padding: 20px;
+        top: 200px;
+        
+    }
+    .details h2{
+        font-size: 50px;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    .details span{
+        font-size: 30px;
+        top: 75px;
+        padding-left: 5px;
+        
+    }
+    .details p{
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-bottom: 15px;
+    }
+    .details .explore{
+        display: block;
+        color: red;
+        text-decoration: underline;
+        text-transform: capitalize;
+        font-size: 8px;
+        margin-top: 18px;
+        padding-top: 5px;
+    }
+    .details .explore:hover{
+        color: #f64646;
+    }
+    section .image-book{
+        position: absolute;
+        top: -8rem;
+        left: 40rem;
+      
+    }
+    .image-book img{
+        width: 30rem;
+    }
+    .pricing .head{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .head h2{
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: black;
+        font-weight: bolder;
+    }
+    .head p{
+        font-size: 1rem;
+        color: grey;
+        font-weight: lighter;
+    }
+    
+
+    .card-body .card{
+        width: 300px;
+        height: 400px;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    
+    .card h2{
+        font-size: 1.3rem;
+        font-weight: bolder;
+        text-transform: capitalize;
+    }
+    .card p{
+        font-size: 14px;
+        word-spacing: 3px;
+    
+    }
+    .card h3{
+        font-size: 3rem;
+        padding: 10px 0;
+    }
+    .card .card-details{
+        font-size: 13px;
+        margin-bottom: 38px;
+    }
+    .card-body .card-big{
+        width: 370px;
+        height: 470px;
+    }
+    
+    .card-big .card h2{
+        font-size: 1.4rem;
+    }
+    .card-big h2{
+        padding-top: 40px;
+    }
+    .card-big .card h3{
+        color: goldenrod;
+        font-size: 5rem;
+        padding: 10px 0;
+    }
+
+    .inside-book-img img{
+        width: 16rem;
+    }
+
+    .inside-book .inside-book-slide{
+        margin: 4% 6%;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:1282px) {
+    section{
+        height: 100vh;
+        width: 100vw;
+        padding: 0 2%;
+        padding-top: 3%;
+    }
+
+    footer p:nth-last-child(2){
+        margin-bottom: 10px;
+    }
+    
+}
+
+
+@media (max-width:1201px) {
+
+    header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 10%;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    z-index: 1000;
+    
+}
+
+    section{
+        height: 100vh;
+        width: 100vw;
+        padding: 0 5%;
+        padding-top: 3%;
+    }
+    section .image-book{
+        position: absolute;
+        top: -9rem;
+        left: 30rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1029px) {
+    
+    header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 10%;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    background-color: transparent;
+    
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    padding: 0 8%;
+    padding-top: 3%;
+}
+section .image-book{
+    position: absolute;
+    top: -9rem;
+    left: 25rem;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    text-align: center;
+}
+footer .head h2{
+    color: white;
+    font-size: 19px;
+    padding-top: 5px;
+}
+footer p:nth-last-child(2){
+    color: whitesmoke;
+    text-align: justify;
+    font-size: 12px;
+    padding: 10px 100px;
+    margin-bottom: 10px;
+}
+
+.card-body .card{
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.card h2{
+    font-size: 1rem;
+}
+.card p{
+    font-size: 13px;
+    word-spacing: 1px;
+    font-weight: 100;
+    color: gray;
+}
+.card h3{
+    color: goldenrod;
+    font-size: 2.5rem;
+    padding: 10px 0;
+}
+.card .card-details{
+    font-size: 13px;
+    text-align:justify;
+    color:grey;
+    margin-bottom: 20px;
+}
+.card-body .card-big{
+    width: 350px;
+    height: 430px;
+    border: 2px solid goldenrod;
+    padding-top: 50px;
+    position: relative;
+}
+
+
+
+}
+
+
+
+
+@media (max-width:995px) {
+
+
+.fa-bars{
+    display: block;
+}
+header #navbar{
+    display: none;
+    
+}
+#navbar ul{
+    display: flex;
+    flex-direction: column;
+}
+header #navbar.show{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width:900px) {
+    
 }
